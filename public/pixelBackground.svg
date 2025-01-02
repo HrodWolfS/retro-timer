@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Pattern definition -->
+  <defs>
+    <pattern id="pixelPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <!-- Base squares -->
+      <rect width="8" height="8" fill="#2c2137"/>
+      <rect x="8" y="0" width="8" height="8" fill="#1a1528"/>
+      <rect x="0" y="8" width="8" height="8" fill="#1a1528"/>
+      <rect x="8" y="8" width="8" height="8" fill="#2c2137"/>
+      
+      <!-- Pixel details -->
+      <rect x="2" y="2" width="2" height="2" fill="#4e8fb1" opacity="0.1"/>
+      <rect x="12" y="4" width="2" height="2" fill="#4e8fb1" opacity="0.1"/>
+      <rect x="4" y="12" width="2" height="2" fill="#4e8fb1" opacity="0.1"/>
+      <rect x="10" y="10" width="2" height="2" fill="#4e8fb1" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background fill -->
+  <rect width="64" height="64" fill="url(#pixelPattern)"/>
+  
+  <!-- Overlay pixel details -->
+  <g opacity="0.05">
+    <rect x="0" y="0" width="4" height="4" fill="#ef7d57"/>
+    <rect x="60" y="0" width="4" height="4" fill="#ef7d57"/>
+    <rect x="0" y="60" width="4" height="4" fill="#ef7d57"/>
+    <rect x="60" y="60" width="4" height="4" fill="#ef7d57"/>
+  </g>
+</svg>
